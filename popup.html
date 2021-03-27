@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="header">
+      <img src="images/logo128.png" width="32px">
+      <h1>joinmeet</h1>
+    </header>
+
+    <div class="create-bg">
+      <form class="create">
+        <div class="meeting">
+          <h3>Meeting</h3>
+          <input id="meeting" class="text-input" type="text" placeholder="Calculus 3 class">
+        </div>
+
+        <input id="url" class="text-input" type="text" placeholder="https://meet.google.com/xxx-xxxx-xxx">
+        
+        <div class="schedule">
+          <select id="weekday">
+            <option class="weekday" value="0">Sunday</option>
+            <option class="weekday" value="1">Monday</option>
+            <option class="weekday" value="2">Tuesday</option>
+            <option class="weekday" value="3">Wednesday</option>
+            <option class="weekday" value="4">Thursday</option>
+            <option class="weekday" value="5">Friday</option>
+            <option class="weekday" value="6">Saturday</option>
+          </select>
+
+          <input id="time" type="time">
+        </div>
+
+        <div class="controls">
+          <div class="repeat">
+            <input id="repeat" name="repeat" type="checkbox" checked> 
+            <label for="repeat">Every week</label>
+          </div>
+          
+          <button id="create-alarm">Schedule!</button>
+        </form>
+      </div>
+    </div>
+
+    <h3>Your schedule</h3>
+
+    <div class="user-schedule-bg">
+      <div class="user-schedule"></div>
+    </div>
+
+    <footer class="footer">
+      <span>Developed by <a href="https://github.com/gp-pereira">gp-pereira</a></span>
+    </footer>
+
+    <script src="popup.js"></script> 
+  </body>
+</html>
